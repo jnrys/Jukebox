@@ -1,0 +1,403 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+/*Header Section*/
+
+.header_section {
+    width: 100%;
+    display: flex;
+    font-weight: bold;
+    justify-content: flex-end;
+}
+
+.header {
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.header_nav {
+    list-style-type: none;
+    display: flex;
+    margin-right: 2rem;
+    margin-left: auto;
+    justify-content: flex-end;
+}
+
+.logo {
+    margin-left: 20px;
+}
+
+/*Hero Section*/
+
+.hero_section {
+    margin-top: 50px;
+    background-image: url('../images/hero-photo.png');
+    width: 100vw;
+    height: calc(.50 * 100vw);
+    background-size : cover;
+    background-position : center;
+    display : flex;
+    flex-direction: column;
+}
+
+.hero_caption{
+    width: calc(40%);
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.hero_caption > h1 {
+    font-size: 4rem;
+    margin-bottom: 0px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero_caption > p {
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Options Section*/
+
+.options_section{
+    width: 100vw;
+    height: 100%;
+    background-position : center;
+    display : flex;
+    flex-direction: column;
+}
+
+.caption{
+    margin-bottom: 2rem;
+}
+
+.caption > h1 {
+    color:#2285fd;
+    font-weight: 1000;
+}
+
+.caption > p{
+    color: darkslategray;
+    font-weight: bold;
+}
+
+.options_container{
+    width: calc(.8 * 100vw);
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    color:white;
+    max-height: 100%;
+}
+
+.options{
+    width: 33.33%;
+    border-radius: 15px;
+    margin: 0 5rem;
+}
+
+.options > h2{
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.options > p{
+    font-weight: 600;
+    margin-top:0;
+}
+
+
+/*Features Section*/
+
+.features_section {
+    margin-top: 50px;
+    background-image: url('../images/about-photo.png');
+    width: 100vw;
+    height: calc(.50 * 100vw);
+    background-size : cover;
+    background-position : center;
+    display : flex;
+    flex-direction: column;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.features_container{
+    width: 100vw;
+    display:flex;
+}
+
+.features{
+    width: 50%;
+}
+
+.features img {
+    height: auto;
+    /* width: 100%; */
+    max-width: 100%;
+  }  
+
+/*Artists Section*/
+
+.artists_section{
+    margin-bottom: 2rem;
+}
+
+.album_container {
+    width: calc(.60 * 100vw);
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    grid-gap: 3rem; 
+}
+
+.grid-item{
+    margin:auto;
+}
+
+.grid-item img {
+    height: auto;
+}
+
+/* Buttons */
+
+.btn{
+    width:150px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 25px;
+    margin-left: 1rem;
+    justify-content: center;
+}
+
+.subscribe_btn{
+    background-color: #df1764;
+    color: white;
+    border:none;
+}
+
+
+#btn_login{
+    background-color: white;
+    color: #df1764;
+    border-color: #df1764;
+}
+
+#btn_subscribe_hero{
+    width:calc(50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_signup{
+    width:calc(60%);
+    border-color: white;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+    color: white;
+}
+
+#signup_basic{
+    background-color:#2285fd;
+}
+
+#container_basic{
+    background-color: #2285fd;
+}
+
+#signup_plus{
+    background-color: #4e65ec;
+}
+
+#container_plus{
+    background-color: #4e65ec;
+}
+
+#signup_premium{
+    background-color: #7930d3;
+}
+
+#container_premium{
+    background-color: #7930d3;
+}
+
+
+/* Footer Section */
+
+.footer{
+    background-color: #2285fd;
+    display: flex;
+    align-items: center;
+    height: 60px;
+    width: 100vw;
+    bottom: 0px;
+    left: 0px;
+}
+
+.socials_section{
+    width: 100%;
+}
+
+.socials_nav{
+    list-style-type: none;
+    display: flex;
+    margin-right: 2rem;
+    justify-content: flex-end;
+    
+}
+
+.icons{
+    margin-right: 1rem;
+}
+
+@media (max-width:1440px){
+    .options > h2{
+        font-size: 2rem;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    
+    .options > p{
+        font-weight: 600;
+        margin-top:0;
+    }
+
+    .options_container{
+        width: calc(.90 * 100vw);
+        align-self: center;
+        display: flex;
+        justify-content: center;
+        color:white;
+        max-height: 100%;
+    }
+
+    .album_container {
+        width: calc(.60 * 100vw);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); 
+        grid-gap: 3rem;
+    }
+}
+
+@media (max-width: 1000px){
+    
+    /*Hero Section*/
+
+    .hero_caption > h1 {
+        font-size: 2rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .hero_caption > p {
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Options Section*/
+    .options_section{
+        width: 100vw;
+        height: 100%;
+        background-position : center;
+        display : flex;
+        flex-direction: column;
+    }
+
+    .options {
+        width: calc(50% - 20px);
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .options_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .features img {
+        width: 30%;
+    }
+
+    .features > h2{
+        font-size: larger;
+    }
+
+    .features > p{
+        font-size: small;
+    }
+
+}
+
+@media (max-width: 800px) {
+    .album_container {
+        width: calc(.60 * 100vw);
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        grid-gap: 3rem; 
+    }
+
+    #btn_subscribe{
+        width: calc(90%);
+    }
+    #btn_login{
+        width: calc(90%);
+    }
+}
+
+@media (max-width: 500px){
+    .hero_caption > h1 {
+        font-size: 1rem;
+        font-weight: bold;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_caption > p {
+        font-size: .5rem;
+        display: flex;
+        flex-direction: column;
+    }
+
+    /*Options Section*/
+    .options_section{
+        width: 100vw;
+        height: 100%;
+        background-position : center;
+        display : flex;
+        flex-direction: column;
+    }
+
+    .options {
+        width: calc(100% - 20px);
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    .options_container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
